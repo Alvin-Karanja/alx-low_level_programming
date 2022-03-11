@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	int n = 48;
-	int com = 44;
-	while (n <= 57)
+int n = 48;
+int com = 44;
+while (n <= 57)
 	{
-		putchar(n);
+	        putchar(n);
 		if (n != 57)
 		{
 			putchar(com);
@@ -23,5 +23,5 @@ int main(void)
 		n += 1;
 	}
 	putchar('\n');
-return (0);
+	return (0);
 }
