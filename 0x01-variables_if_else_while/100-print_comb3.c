@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/** 
-** main - program that prints all possible different combinations of two digits
-** Numbers must be separated by ,followed by a space
-** The two digits must be different
-** 01 and 10 are considered the same combination of the two digits 0 and 1
-** Return: 0
-*/
+/**
+ ** main - program that prints all possible different combinations of two digits
+ ** Numbers must be separated by ,followed by a space
+ ** The two digits must be different
+ ** 01 and 10 are considered the same combination of the two digits 0 and 1
+ ** Return: 0
+ */
 
 int main(void)
 {
@@ -15,7 +15,6 @@ int main(void)
 	int com = 44;
 	while (n1 <= 57)
 	{
-	
 		n2 = n1 + 1;
 		while (n2 <= 57)
 		{
@@ -30,6 +29,6 @@ int main(void)
 		}
 		n1 += 1;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
