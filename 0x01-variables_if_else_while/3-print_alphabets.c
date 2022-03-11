@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * * main - main block
- * * This program prints alphabet in lowcase then in uppercase.
- * *Return: 0
- * */
+ ** main - main block
+ ** This program prints alphabet in lowcase then in uppercase.
+ **Return: 0
+ */
 int main(void)
 {
 char ch;
