@@ -1,39 +1,40 @@
 #include <stdio.h>
+
 /**
- ** main - main block
- ** Description: Print all possible combinations of two two-digit numbers.
+ ** main - program that prints all possible combinations of
+ ** two two-digit
+ ** The numbers should range from 0 to 99
+ ** Numbers must be separated by ,followed by a space
+ ** All numbers should be printed with two digits. 1 should be printed as 01
  ** Return: 0
  */
+
 int main(void)
 {
-int i, j;
-int a, b, c, d;
+	int n1 =48;
+	int a =0;
+	int b;
+	int com = 44;
 
-	for (i = 0; i < 100; i++)
+	while (a <= 99)
 	{
-	a = i / 10; /* doubles fnum */
-        b = i % 10; /* singles fnum */
-
-	for (j = 0; j < 100; j++)
-	{
-	c = j / 10; /* doubles snum */
-	d = j % 10; /* singles snum */
-	if (a < c || (a == c && b < d))
-	{
-	putchar(a = '0');
-	putchar(b + '0');
-	putchar(32);
-	putchar(c + '0');
-	putchar(d + '0');
-	if (!(a == 9 && b == 8))
-	{
-	putchar(44);
-	putchar(32);
+		b = a + 1;
+		while (b <= 99)
+		{
+			putchar((a / 10) + n1);
+			putchar((a % 10) + n1);
+			putchar(32);
+			putchar((b / 10) + n1);
+			putchar((b % 10) + n1);
+			if (a != 98 || b != 99)
+			{
+				putchar(com);
+				putchar(32);
+			}
+			b += 1;
+		}
+		a += 1;
 	}
-	}
-	}
-	}
-	putchar(10);
-
-return (0);
+	putchar('\n');
+	return (0);
 }
