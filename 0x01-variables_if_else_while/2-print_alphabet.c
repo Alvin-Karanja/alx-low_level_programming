@@ -1,20 +1,16 @@
 #include <stdio.h>
-#include <ctype.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- ** main - program that prints the alphabet in lowercase, followed by a new line
- ** You can only use the putchar
- ** Return: 0
+ * *main - main block
+ * *Program prints alphabet in lowcase, followed by a new line
+ * *Return: 0
  */
-
 int main(void)
 {
-	int l = 'a';
-	while (l <= 'z')
-	{
-		putchar(l);
-		l += 1;
-	}
-	putchar('\n');
-	return (0);
+		char ch = 'a';
+			for (ch = 'a'; ch <= 'z'; ch++)
+			putchar(ch);
+			putchar('\n');
+			return (0);
 }
