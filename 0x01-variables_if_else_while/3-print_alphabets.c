@@ -1,25 +1,19 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- ** main - program that prints the alphabet in lowercase, and then in uppercase,
- ** You can only use the putchar
- ** Return: 0
- */
-
+ * * main - main block
+ * * This program prints alphabet in lowcase then in uppercase.
+ * *Return: 0
+ * */
 int main(void)
 {
-	int lw = 'a';
-	int up = 'A';
-	while (lw <= 'z')
-	{
-		putchar(lw);
-		lw += 1;
-	}
-	while (up <= 'Z')
-	{
-		putchar(up);
-		up += 1;
-	}
+char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
+	putchar(ch);
+	ch = 'A';
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	putchar(ch);
 	putchar('\n');
-	return (0);
+return (0);
 }
