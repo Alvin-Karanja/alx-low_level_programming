@@ -270,4 +270,3 @@ int main(int argc, char **argv)
   print_me(sum_result, len_r);
   
   return (0); }
-  
